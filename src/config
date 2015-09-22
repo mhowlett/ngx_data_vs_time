@@ -1,0 +1,5 @@
+CORE_LIBS="$CORE_LIBS -lm"
+ngx_addon_name=ngx_http_data_vs_time_module
+HTTP_MODULES="$HTTP_MODULES ngx_http_data_vs_time_module"
+NGX_ADDON_DEPS="$NGX_ADDON_DEPS $ngx_addon_dir/dvt_exposition.h $ngx_addon_dir/dvt_stringhash.h $ngx_addon_dir/ngx_hash_utils.h $ngx_addon_dir/dvt_series_spec.h $ngx_addon_dir/dvt_cache.h $ngx_addon_dir/dvt_simulation.h $ngx_addon_dir/dvt_trie.h $ngx_addon_dir/ngx_string_utils.h"
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/ngx_http_data_vs_time_module.c $ngx_addon_dir/dvt_exposition.c $ngx_addon_dir/dvt_stringhash.c $ngx_addon_dir/ngx_hash_utils.c $ngx_addon_dir/dvt_series_spec.c $ngx_addon_dir/dvt_cache.c $ngx_addon_dir/dvt_debug.c $ngx_addon_dir/dvt_simulation.c $ngx_addon_dir/dvt_trie.c $ngx_addon_dir/ngx_string_utils.c"
