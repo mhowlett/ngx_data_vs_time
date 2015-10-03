@@ -17,8 +17,8 @@
  */
 
 /* 
- * This file may be derived, in part from nginx source, distributed with
- * the following license:
+ * ngx_data_vs_time is derived, in part, from nginx source which is 
+ * distributed with the following license:
  *
  * Copyright (C) 2002-2015 Igor Sysoev
  * Copyright (C) 2011-2015 Nginx, Inc.
