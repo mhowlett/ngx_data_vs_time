@@ -10,18 +10,18 @@ Currently, that is all it can do. In the future, it will may get extended to ena
 
 First, the custom nginx needs to be built.
 
-./docker-build-up.sh
+    ./docker-build-up.sh
 
 then:
 
-cd /repo
-./fetch-nginx.sh
-./build.sh
+    cd /repo
+    ./fetch-nginx.sh
+    ./build.sh
 
 ### Running
 
 Now can run:
 
-./docker-up.sh
+    ./docker-up.sh
 
 note that this calls provision-up.sh which installs the previously build nginx in an appropriate location.
