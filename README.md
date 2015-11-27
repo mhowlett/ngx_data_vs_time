@@ -1,11 +1,12 @@
 # ngx_data_vs_time
 
-This is an nginx module for providing simulation data to datavstime.com. In fact, it's the backend used by the demo on the website. 
+This is an nginx module that exposes data in a format suitable for use by the datavstime Proxy Adapter. In fact, it provides data for the main demo.
 
-I built this because DvT can put considerable strain on the datasource it's connected to, so I wanted something very performant for the demo. I expect ngx_data_vs_time is probably at least a couple of orders of magnitude quicker than connecting to a real database (it's doing far less work).
+I built it because DvT can put considerable strain on the data source it's connected to so I wanted something very performant for the demo. I expect ngx_data_vs_time is probably at least a couple of orders of magnitude quicker than connecting to a real database (it's doing far less work).
 
-Currently, providing simulation data is all it can do. In the future, it may get extended to enable proxying of data from common data sources, though where possible this functionality will be included directly in the front end.
+Now I've created this, I remember how much more effort it is to write something in C compared to a higher level (but still quite performant) language such as go or C#. 
 
+If you would like to create your own custom data provider for DvT, I would recommend you don't start here, rather check out one of the [higher level language examples](https://github.com/mhowlett/datavstime-examples).
 
 ## Docker
 
