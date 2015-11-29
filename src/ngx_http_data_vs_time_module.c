@@ -222,7 +222,7 @@ static ngx_str_t query_handler(ngx_http_request_t *r, uint32_t args_offset)
      {
        step = strtoull(vvalue, (char **)NULL, 10);
      }
-     else if (strncmp(vname, "series", sizeof("series") - 1) == 0)
+     else if (strncmp(vname, "query", sizeof("query") - 1) == 0)
      {
        series_spec_text.data = vvalue;
        series_spec_text.len = strlen(vvalue);
@@ -373,10 +373,10 @@ static ngx_int_t ngx_http_data_vs_time_handler(ngx_http_request_t *r)
   ngx_str_t    result_body;
 
   if (strncmp((char *)r->uri.data,
-            "/api/v1/query?",
-     sizeof("/api/v1/query?")-1) == 0)
+            "/api/v1/series?",
+     sizeof("/api/v1/series?")-1) == 0)
   {
-    result_body = query_handler(r, sizeof("/api/v1/query?") -1 );
+    result_body = query_handler(r, sizeof("/api/v1/series?") -1 );
   }
 
   else if (strncmp((char *)r->uri.data,
